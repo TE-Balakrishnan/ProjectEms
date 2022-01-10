@@ -22,7 +22,5 @@ public class EmsController {
 	public ResponseEntity<UserDetails> getData(@PathVariable String id){
 	UserDetails	ref=service.getData(id);
 	return new ResponseEntity<UserDetails>(ref,HttpStatus.OK);
-	}
-	
-	
+	}	
 }
