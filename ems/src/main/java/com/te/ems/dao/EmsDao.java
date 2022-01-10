@@ -1,5 +1,9 @@
 package com.te.ems.dao;
 
-public class EmsDao {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.te.ems.beans.UserDetails;
+
+public interface EmsDao extends JpaRepository<UserDetails, String> {
 
 }
